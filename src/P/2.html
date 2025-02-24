@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var product = [1, 2, 3, 4, 5];
+        var result = product.map((i) => ({
+            홍길동: [i, i * 10],
+            김: "사랑" + i,
+        }));
+        console.log(result);
+        var even = product.filter((i) => i % 2 == 0).map((i) => i * 10);
+        var odd = product.filter((i) => i % 2 == 1).map((i) => i * 20);
+        var result = [{ 짝수: even }, { 홀수: odd }];
+        console.log(result);
+    </script>
+</body>
+</html>

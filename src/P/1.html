@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var product = {
+            uploadFilNames: ['test.jpg', 'test2.jpg', 'test3.jpg'],
+        }
+        var result = product.uploadFilNames.filter((i) => i !== "test.jpg");
+        console.log(result);
+
+        var product2 = { ...product, result }
+        console.log(product2);
+        
+
+       
+    </script>
+</body>
+
+</html>
